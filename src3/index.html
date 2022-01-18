@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>vanliaJS Assign</title>
+</head>
+    <body>
+        <h1>Random Number Game</h1>
+        <h2>Generate a number between 0 and</h2>
+        <form id="enter_num">
+            <input required
+             type="text"/>
+        </form>
+
+        <p>
+            Guess the number:
+        </p>
+            <form id = "random_num">
+                <input type="text"/>
+                <button>play!</button>
+            </form>
+        <div class="hidden" id = "result">
+            <div>
+                You chose : <span id= "myPick"></span>, the machine chose:<span id = "machinePick"></span>
+            </div>
+            <div id="confirmPart">
+               
+            </div>
+        </div>
+            <script src= "index.js"></script>
+    </body>
+
+</html>
