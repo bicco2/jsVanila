@@ -30,6 +30,7 @@ function paintToDo(newTodo){
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
+
     
 }
 

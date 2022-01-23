@@ -7,26 +7,42 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Momentum App</title>
 </head>
-<body>
-    <form class="hidden" id ="login-form">
-    <input 
-        required 
-        maxlength="15" 
-        type="text" 
-        placeholder="what is your name?"
-    />
-    <input type = "submit" value="Log In"/>
-    </form>
-    <h2 id="clock">00:00</h2>
+<body id="bodyImg">
+
+
+    <h2 id="clock" class="timeStyle">00:00</h2>
+
+    <h3 class="askName">What is your name?</h3>
+    <form class="hidden greeting" id ="login-form">
+        <input 
+            required 
+            maxlength="15" 
+            type="text" 
+            style="background-color:transparent; color:white" 
+        />
+        <input type = "submit" style="background-color: transparent;" value="입장"/>
+        </form>
+
     <h1 class ="hidden" id = "greeting"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required/>
+
+    <h3 class="askName">Write a To Do and Press Enter</h3>
+    <form id="todo-form" class="todoEnter">
+        <input type="text" style="background-color:transparent;"  required/>
     </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
+
+    <ul id="todo-list" class="todoList";></ul>
+
+    <div id ="weather">
         <span></span>
         <span></span>
     </div>
+
+    <div id="quote" style="float: right; color:blanchedalmond;">
+        <span></span>
+        <span></span>
+
+    </div>
+    
     
     <script src="js/greeting.js"></script>
     <script src="js/weather.js"></script>
