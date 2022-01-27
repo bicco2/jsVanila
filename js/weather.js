@@ -8,10 +8,22 @@ function onGeoOk(position){
     fetch(url)
         .then(response => response.json())
         .then(data =>{
-            const weather = document.querySelector("#weather span:first-child");
-            const city = document.querySelector("#weather span:last-child");
+            const weather = document.getElementById("weatherImg");
+            const city = document.getElementById("weatherNum");
+            const iiii = document.getElementById("iii");
+
+            
+
+            console.log(iiii);
+
             city.innerText = data.name;
-            weather.innerText =`${data.weather[0].main} / ${data.main.temp}`;
+
+            if(data.weather[0].main == "Clear"){
+                weather.innerText =`${data.weather[0].main} / ${data.main.temp}`;
+                iiii.src = "img/clear.png";
+                iiii.width = "50";
+                iiii.height = "50";
+            }
     });
 }
 function onGeoError(){
