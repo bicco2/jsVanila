@@ -24,6 +24,9 @@ function onGeoOk(position){
                 iiii.width = "30";
                 iiii.height = "30";
             }
+            else {
+                weather.innerText =`${data.weather[0].main} / ${data.main.temp}`;
+            }
     });
 }
 function onGeoError(){
