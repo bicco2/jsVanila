@@ -19,10 +19,10 @@ function onGeoOk(position){
             city.innerText = data.name;
 
             if(data.weather[0].main == "Clear"){
-                weather.innerText =`${data.weather[0].main} / ${data.main.temp}`;
+                weather.innerText =`${data.main.temp}`;
                 iiii.src = "img/clear.png";
-                iiii.width = "50";
-                iiii.height = "50";
+                iiii.width = "30";
+                iiii.height = "30";
             }
     });
 }
