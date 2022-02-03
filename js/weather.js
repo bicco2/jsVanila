@@ -12,10 +12,6 @@ function onGeoOk(position){
             const city = document.getElementById("weatherNum");
             const iiii = document.getElementById("iii");
 
-            
-
-            console.log(iiii);
-
             city.innerText = data.name;
 
             if(data.weather[0].main == "Clear"){
@@ -24,6 +20,35 @@ function onGeoOk(position){
                 iiii.width = "30";
                 iiii.height = "30";
             }
+
+            if(data.weather[0].main == "Clear"){
+                weather.innerText =`${data.main.temp}`;
+                iiii.src = "img/clear.png";
+                iiii.width = "30";
+                iiii.height = "30";
+            }
+
+            if(data.weather[0].main == "Rain"){
+                weather.innerText =`${data.main.temp}`;
+                iiii.src = "img/rain.png";
+                iiii.width = "30";
+                iiii.height = "30";
+            }
+
+            if(data.weather[0].main == "Snow"){
+                weather.innerText =`${data.main.temp}`;
+                iiii.src = "img/snow.png";
+                iiii.width = "30";
+                iiii.height = "30";
+            }
+             if(data.weather[0].main == "Extreme"){
+                weather.innerText =`${data.main.temp}`;
+                iiii.src = "img/extreme.png";
+                iiii.width = "30";
+                iiii.height = "30";
+            }
+
+
             else {
                 weather.innerText =`${data.weather[0].main} / ${data.main.temp}`;
             }
